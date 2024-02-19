@@ -37,10 +37,9 @@ select
 from {{ source('staging', 'green_tripdata')}}
 
 where vendorid is not null
-/*
+
 {% if var('is_test_run', default=true) %}
     
     limit 100
 
 {% endif %}
-*/
